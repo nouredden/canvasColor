@@ -1,8 +1,10 @@
 function changeColorBlue(){
     var divElement1 =
     document.getElementById("div1");
-    
     divElement1.style.backgroundColor= "blue";
+    var divElement2 =
+    document.getElementById("div2");
+    divElement2.style.backgroundColor= "green";
 }
 function changeColorRed(){
 
@@ -19,6 +21,12 @@ function changeColorRed(){
     context.fillStyle = "black";
     context.font = "20px Arial";
     context.fillText("World", 85, 50);
+}
+function doOrange() {
+    var canvas = document.getElementById("div2");
+    var context = canvas.getContext("2d");
+    context.clearRect(0,0,canvas.clientWidth,canvas.height);
+    canvas.style.backgroundColor = "orange";
 }
 //const myCanvas = document.getElementById("myCanvas");
 //const ctx = myCanvas.getContext("2d");
