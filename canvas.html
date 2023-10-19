@@ -4,14 +4,24 @@
         <meta charset="UTF8">
         <link rel="stylesheet" type="text/css" href="Style.css">
     </head>
-<body>
-<h1 id="t1">Canvas Practice</h1>
+<body><h1>Green Screen Web Page</h1>
 
-<canvas id="div1" class="white"></canvas>
-<canvas id="div2" class="white"></canvas>
-<input type="button" value="change color" id="bt1" onclick="changeColorBlue()">
-<input type="button" value="change color" id="bt2" onclick="changeColorRed()">
-<input type="button" value="change color" id="bt3" onclick="doOrange()">
+    <canvas id = "can1">
+    </canvas>
+   
+    
+    <p>
+         <input type="file" multiple="false" accept="image/*" id="finput" onchange="upload()" >
+    </p>
+    
+    <p>
+        <input type="button" value="Red" onclick="drawRed()" >
+        <input type="button" value="Blur" onclick="drawBlur()" >
+        <input type="button" value="Gray scale" onclick="drawGray()" >
+    <input type="button" value="Clear Canvas" onclick="clearCanvas()" >
+    </p>
 <script src="canvas.js"></script>
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" >
+</script>
 </body>
 </html>
